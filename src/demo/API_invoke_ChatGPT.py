@@ -2,7 +2,8 @@ import openai
 
 # 设置您的 OpenAI API Key
 
-#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
+#sk-proj-ikdubbXGF86m0HGu4n0ZtcBKTtDgX94cM6hPfmhoc9d1dYQqiKZDbhfSLx
+#_XCwI1qt6zPAKk5OT3BlbkFJIe6NsJjaLqp4XMbhb0vBbG_dSsp5oJCzmvEPN_xvUV1JHABTb5QlQOtyNNxzGqIgXrqJAgypMA
 api_key = ""
 
 # 创建 OpenAI 客户端
