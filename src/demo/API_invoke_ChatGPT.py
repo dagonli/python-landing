@@ -1,9 +1,6 @@
 import openai
 
-# 设置您的 OpenAI API Key
-
-#sk-proj-ikdubbXGF86m0HGu4n0ZtcBKTtDgX94cM6hPfmhoc9d1dYQqiKZDbhfSLx
-#_XCwI1qt6zPAKk5OT3BlbkFJIe6NsJjaLqp4XMbhb0vBbG_dSsp5oJCzmvEPN_xvUV1JHABTb5QlQOtyNNxzGqIgXrqJAgypMA
+#我拿不到我的值，所以我先注释掉
 api_key = ""
 
 # 创建 OpenAI 客户端
@@ -22,3 +19,12 @@ response = client.chat.completions.create(
 
 # 打印返回的回复内容
 print(response.choices[0].message['content'])
+
+
+
+
+
+
+
+#我放这里了
+#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
