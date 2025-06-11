@@ -3,7 +3,7 @@ import json
 
 # 接口地址
 #http://10.224.150.60/v1/chat/completions
-url = ""
+url = "http://10.224.150.60/v1/chat/completions"
 
 # 请求头
 headers = {
@@ -17,7 +17,7 @@ data = {
     "messages": [
         {
             "role": "user",
-            "content": "不要解释过程，直接给出结果。你是谁？"
+            "content": "讲1个给程序员听得笑话？"
         }
     ],
     "extra_body": {
