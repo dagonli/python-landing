@@ -1,7 +1,7 @@
 import openai
 
 #我拿不到我的值，所以我先注释掉
-api_key = ""
+api_key = "额度已经用光了"
 
 # 创建 OpenAI 客户端
 client = openai.OpenAI(api_key=api_key)
@@ -25,6 +25,3 @@ print(response.choices[0].message['content'])
 
 
 
-
-#我放这里了
-#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
