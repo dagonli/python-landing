@@ -1,6 +1,7 @@
 from zhipuai import ZhipuAI
 import sys
-client = ZhipuAI(api_key="cb63520e04d44a04c1cae90cfcdafcc6.uTkSHpw9iACxmBgf")
+#cb63520e04d44a04c1cae90cfcdafcc6.uTkSHpw9iACxmBgf
+client = ZhipuAI(api_key="")
 response = client.chat.completions.create(
     model="glm-4",
     messages=[
