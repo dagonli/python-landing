@@ -1,0 +1,46 @@
+# Virtualenv 文件夹
+venv/
+ENV/
+env/
+.venv/
+.ENV/
+.env/
+
+# Python 缓存文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 配置文件和本地开发环境
+*.env
+*.DS_Store
+*.vscode/
+.idea/
+*.swp
+*.swo
+
+# pip 的依赖缓存
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints
+
+# 本地日志文件
+*.log
+
+# Pytest 缓存
+.pytest_cache/
+
+# mypy 类型检查缓存
+.mypy_cache/
+
+# coverage 代码覆盖率
+.coverage
+htmlcov/
+coverage.xml
+
+# 构建输出
+build/
+dist/
+*.egg-info/

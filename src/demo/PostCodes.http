@@ -1,0 +1,13 @@
+### GET request to example server
+GET api.postcodes.io/postcodes/OX49 5NU
+
+###
+GET api.postcodes.io/postcodes?lon=100&lat=100
+
+###
+GET https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=YOUR_API_KEY
+
+###
+OPTIONS api.postcodes.io/postcodes?lon=100&lat=100
+
+
