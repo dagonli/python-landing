@@ -2,7 +2,8 @@ import requests
 import json
 
 # 接口地址
-url = "http://10.224.150.60/v1/chat/completions"
+#http://10.224.150.60/v1/chat/completions
+url = ""
 
 # 请求头
 headers = {
