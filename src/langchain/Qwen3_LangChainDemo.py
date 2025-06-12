@@ -4,6 +4,9 @@ from langchain_core.outputs import ChatResult, ChatGeneration
 import requests
 import json
 
+from .llm_model_util import get_model
+
+
 class CustomQwenChat(BaseChatModel):
     base_url: str = "http://10.224.150.60/v1/chat/completions"
     model_name: str = "qwen3-32b"
@@ -48,16 +51,27 @@ class CustomQwenChat(BaseChatModel):
     def _llm_type(self) -> str:
         return "custom_qwen"
 
+llm = get_model("qwen3-32b")
+
+
+async def method1(self):
+    async for chunk in llm.astream([
+        {"role": "system", "content": "讲一个程序员笑话"}
+    ]):
+        print(chunk.content)
+
 
     # 初始化模型
 qwen_model = CustomQwenChat()
 
 # 构造输入消息
-messages = [HumanMessage(content="讲一个程序员笑话")]
+# messages = [HumanMessage(content="讲一个程序员笑话")]
 
-print(messages)
+
+
+
 # 调用模型
-result = qwen_model.invoke(messages)
+# result = qwen_model.invoke(messages)
 
 # 输出结果
-print(result.content)
+# print(result.content)
