@@ -43,10 +43,10 @@ def get_model(model_name) -> ModelT:
             {
                 "model": "qwen3-32b",
                 "api_key": "qwen3-32b",
-                "base_url": "http://10.224.150.60/v1/chat/completions",
+                "base_url": "http://10.224.150.60/v1",
                 "temperature": 0.7,
                 "max_tokens": 20000,
-                "request_timeout":3
+                "request_timeout":10
             },
             {
                 "model": "Qwen/Qwen3-14B",
