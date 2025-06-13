@@ -53,25 +53,39 @@ class CustomQwenChat(BaseChatModel):
 
 llm = get_model("qwen3-32b")
 
+print(llm)
 
-async def method1(self):
-    async for chunk in llm.astream([
-        {"role": "system", "content": "讲一个程序员笑话"}
-    ]):
-        print(chunk.content)
+print("开始输出模型应答了：")
+
+# 流失输出结果
+
+# try:
+#     for chunk in llm.stream([HumanMessage(content="讲一个程序员笑话")]):
+#         print(chunk.content, end="", flush=True)
+# except Exception as e:
+#     print(f"请求超时或出错: {e}")
+#
+#
+#
+#
+# for chunk in llm.stream([
+#     {"role": "system", "content": "讲一个程序员笑话"}
+# ]):
+#     print(chunk.content)
+
 
 
     # 初始化模型
 qwen_model = CustomQwenChat()
 
 # 构造输入消息
-# messages = [HumanMessage(content="讲一个程序员笑话")]
+messages = [HumanMessage(content="讲一个程序员笑话")]
 
 
 
 
 # 调用模型
-# result = qwen_model.invoke(messages)
+result = qwen_model.invoke(messages)
 
 # 输出结果
-# print(result.content)
+print(result.content)

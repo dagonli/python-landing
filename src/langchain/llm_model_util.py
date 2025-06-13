@@ -35,23 +35,26 @@ def get_model(model_name) -> ModelT:
             {
                 "model": "qwq-32b",
                 "api_key": "qwq-32b",
-                "base_url": "http://10.224.150.60/v1",
+                "base_url": "http://10.224.150.60/v1/chat/completions",
                 "temperature": 0.7,
-                "max_tokens": 20000
+                "max_tokens": 20000,
+                "request_timeout":3
             },
             {
                 "model": "qwen3-32b",
                 "api_key": "qwen3-32b",
-                "base_url": "http://10.224.150.60/v1",
+                "base_url": "http://10.224.150.60/v1/chat/completions",
                 "temperature": 0.7,
-                "max_tokens": 20000
+                "max_tokens": 20000,
+                "request_timeout":3
             },
             {
                 "model": "Qwen/Qwen3-14B",
                 "api_key": "Qwen/Qwen3-14B ",
                 "base_url": "http://10.228.131.53/v1",
                 "temperature": 0.7,
-                "max_tokens": 20000
+                "max_tokens": 20000,
+                "request_timeout":10
             }
         ]
     }
