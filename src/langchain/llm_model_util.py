@@ -46,7 +46,7 @@ def get_model(model_name) -> ModelT:
                 "base_url": "http://10.224.150.60/v1",
                 "temperature": 0.7,
                 "max_tokens": 20000,
-                "request_timeout":10
+                "request_timeout":120
             },
             {
                 "model": "Qwen/Qwen3-14B",
