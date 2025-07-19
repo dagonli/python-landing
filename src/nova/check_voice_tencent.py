@@ -31,8 +31,8 @@ try:
 
     # 加载凭证
     cred = credential.Credential(
-        "AKIDUwtb5LYebNBmU3RedQzKSN3YprgHl37x",
-        "nOmwrc9RXR7ZnmX3LPFqEQPBk6GDxUmp"
+        "xxx",
+        "xx"
     )
 
 
