@@ -10,4 +10,17 @@ GET https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+
 ###
 OPTIONS api.postcodes.io/postcodes?lon=100&lat=100
 
+###
+GET https://restapi.amap.com/v3/geocode/geo?key=a4997598e8fd62b3eb5089bba58b216f&address=深圳市南山区文体中心二楼
+
+###
+GET https://restapi.amap.com/v3/geocode/regeo?key=a4997598e8fd62b3eb5089bba58b216f&location=121.5294,31.2211&radius=1000&extensions=all
+
+###
+GET https://restapi.amap.com/v5/place/text?key=a4997598e8fd62b3eb5089bba58b216f&keywords=福田区绿景NEO大厦A座
+
+###
+POST https://restapi.amap.com/rest/me/polygon/dataquery/sq&key=a4997598e8fd62b3eb5089bba58b216f&adcode=440304
+Content-Type: application/json
+
 
